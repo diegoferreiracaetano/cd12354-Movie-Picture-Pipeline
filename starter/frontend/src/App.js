@@ -3,6 +3,7 @@ import MovieList from './components/MovieList';
 import MovieDetails from './components/MovieDetails';
 import './App.css';
 
+// Trigger CI verification
 export default function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
