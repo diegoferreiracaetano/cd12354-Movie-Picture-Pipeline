@@ -12,6 +12,8 @@ Response:
 {"movies":[{"id":"123","title":"Top Gun: Maverick"},{"id":"456","title":"Sonic the Hedgehog"},{"id":"789","title":"A Quiet Place"}]}
 ```
 
+Screenshot: [screenshots/backend-movies-endpoint.png](screenshots/backend-movies-endpoint.png)
+
 ## Frontend
 
 Working URL (LoadBalancer, only valid while the EKS cluster is up):
