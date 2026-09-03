@@ -17,7 +17,9 @@ RUN apk update && \
 RUN mkdir -p /var/www/app && mkdir /app
 
 COPY Pipfile* /app
-RUN cd /app && pipenv install --system --deploy
+# CFLAGS suppresses a GCC error (incompatible pointer type in signal()) that
+# newer Alpine toolchains raise when compiling uwsgi==2.0.21 from source
+RUN cd /app && CFLAGS="-Wno-error=incompatible-pointer-types" pipenv install --system --deploy
 
 COPY . /app
 
