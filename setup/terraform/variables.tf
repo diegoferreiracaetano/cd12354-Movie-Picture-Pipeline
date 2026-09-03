@@ -1,5 +1,6 @@
 variable "k8s_version" {
-  default = "1.25"
+  # AWS deprecated 1.25; keep this in sync with `aws eks describe-cluster-versions`
+  default = "1.36"
 }
 
 variable "enable_private" {
