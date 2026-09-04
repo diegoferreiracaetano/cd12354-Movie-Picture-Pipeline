@@ -1,5 +1,17 @@
 # Movie Picture Pipeline
 
+## Submission
+
+- **GitHub repository**: https://github.com/diegoferreiracaetano/cd12354-Movie-Picture-Pipeline
+- **Frontend LoadBalancer URL**: http://adba5ebc0577046799a965807a17d07b-1848545007.us-east-1.elb.amazonaws.com
+- **Backend LoadBalancer URL**: http://af50913de83164c378fc35dfc084d759-906327990.us-east-1.elb.amazonaws.com/movies
+
+> Both LoadBalancer URLs only respond while the EKS cluster is provisioned. Screenshots proving both applications were live and successful Actions runs for all four workflows are in [`SUBMISSION.md`](SUBMISSION.md) and the [`screenshots/`](screenshots) folder.
+
+All four required workflows live in [`.github/workflows/`](.github/workflows): `frontend-ci.yaml`, `backend-ci.yaml`, `frontend-cd.yaml`, `backend-cd.yaml`.
+
+---
+
 You've been brought on as the DevOps resource for a development team that manages a web application that is a catalog of Movie Picture movies. They're in dire need of automating their development workflows in hopes of accelerating their release cycle. They'd like to use Github Actions to automate testing, building and deploying their applications to an existing Kubernetes cluster.
 
 The team's project is comprised of 2 applications.
