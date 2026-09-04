@@ -2,6 +2,13 @@
 
 Deployed via the `backend-cd.yaml` / `frontend-cd.yaml` workflows in this repo, cluster provisioned by `setup/terraform`.
 
+## GitHub Actions runs (all four workflows, successful)
+
+- Frontend Continuous Integration: [screenshots/frontend-ci-success.png](screenshots/frontend-ci-success.png)
+- Backend Continuous Integration: [screenshots/backend-ci-success.png](screenshots/backend-ci-success.png)
+- Frontend Continuous Deployment: [screenshots/frontend-cd-success.png](screenshots/frontend-cd-success.png)
+- Backend Continuous Deployment: [screenshots/backend-cd-success.png](screenshots/backend-cd-success.png)
+
 ## Backend
 
 Working URL (LoadBalancer, only valid while the EKS cluster is up):
