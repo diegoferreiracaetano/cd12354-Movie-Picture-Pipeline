@@ -3,10 +3,10 @@
 ## Submission
 
 - **GitHub repository**: https://github.com/diegoferreiracaetano/cd12354-Movie-Picture-Pipeline
-- **Frontend LoadBalancer URL**: http://adba5ebc0577046799a965807a17d07b-1848545007.us-east-1.elb.amazonaws.com
-- **Backend LoadBalancer URL**: http://af50913de83164c378fc35dfc084d759-906327990.us-east-1.elb.amazonaws.com/movies
+- **Frontend LoadBalancer URL** (torn down after review, see screenshot): http://adba5ebc0577046799a965807a17d07b-1848545007.us-east-1.elb.amazonaws.com
+- **Backend LoadBalancer URL** (torn down after review, see screenshot): http://af50913de83164c378fc35dfc084d759-906327990.us-east-1.elb.amazonaws.com/movies
 
-> Both LoadBalancer URLs only respond while the EKS cluster is provisioned. Screenshots proving both applications were live and successful Actions runs for all four workflows are in [`SUBMISSION.md`](SUBMISSION.md) and the [`screenshots/`](screenshots) folder.
+> The AWS infrastructure (EKS cluster, node group, load balancers) was destroyed via `terraform destroy` after verification to preserve AWS Cloud Lab credits, so both LoadBalancer URLs above are no longer reachable. Screenshots proving both applications were live and successful Actions runs for all four workflows are in [`SUBMISSION.md`](SUBMISSION.md) and the [`screenshots/`](screenshots) folder.
 
 All four required workflows live in [`.github/workflows/`](.github/workflows): `frontend-ci.yaml`, `backend-ci.yaml`, `frontend-cd.yaml`, `backend-cd.yaml`.
 
